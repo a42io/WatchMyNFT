@@ -1,0 +1,13 @@
+node_modules/
+*.log
+*.json
+*.yml
+**.*.log
+**.*.json
+**.*.yml
+*.md
+**/*.md
+**/*.html
+**/*.svg
+yarn.lock
+*/yarn.lock
