@@ -38,10 +38,9 @@ type Asset = {
     animation_original_url: string
     name: string
     external_link: string
-    asset_contract: AssetContract
+    contract: AssetContract
     description: string
     owner: string
-    contract: Contract
 }
 
 async function recursiveCallAssets(
@@ -72,12 +71,12 @@ async function recursiveCallAssets(
                 description: r.description,
                 external_link: r.external_link,
                 contract: {
-                    name: r.asset_contract.name,
-                    address: r.asset_contract.address,
-                    symbol: r.asset_contract.symbol,
-                    image_url: r.asset_contract.image_url,
-                    external_link: r.asset_contract.external_link,
-                    description: r.asset_contract.description
+                    name: r.contract.name,
+                    address: r.contract.address,
+                    symbol: r.contract.symbol,
+                    image_url: r.contract.image_url,
+                    external_link: r.contract.external_link,
+                    description: r.contract.description
                 }
             }
         })
