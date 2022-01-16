@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E145AE279472610080B8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145AD279472610080B8D0 /* AppDelegate.swift */; };
+		08E145B0279472610080B8D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145AF279472610080B8D0 /* SceneDelegate.swift */; };
+		08E145B2279472610080B8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145B1279472610080B8D0 /* ViewController.swift */; };
+		08E145B5279472610080B8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E145B3279472610080B8D0 /* Main.storyboard */; };
+		08E145B7279472620080B8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E145B6279472620080B8D0 /* Assets.xcassets */; };
+		08E145BA279472620080B8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E145B8279472620080B8D0 /* LaunchScreen.storyboard */; };
+		08E145BF279472620080B8D0 /* WatchMyNFT WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08E145BE279472620080B8D0 /* WatchMyNFT WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08E145C5279472620080B8D0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E145C3279472620080B8D0 /* Interface.storyboard */; };
+		08E145C7279472620080B8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E145C6279472620080B8D0 /* Assets.xcassets */; };
+		08E145CD279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08E145CC279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08E145D2279472620080B8D0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145D1279472620080B8D0 /* InterfaceController.swift */; };
+		08E145D4279472620080B8D0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145D3279472620080B8D0 /* ExtensionDelegate.swift */; };
+		08E145D6279472620080B8D0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145D5279472620080B8D0 /* ComplicationController.swift */; };
+		08E145D8279472630080B8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E145D7279472630080B8D0 /* Assets.xcassets */; };
+		08E145E8279473970080B8D0 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E145E7279473970080B8D0 /* WatchConnectivityProvider.swift */; };
+		08E145EB279478720080B8D0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 08E145EA279478720080B8D0 /* Alamofire */; };
+		08E145EE279478F10080B8D0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 08E145ED279478F10080B8D0 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E145C0279472620080B8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E145A2279472610080B8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E145BD279472620080B8D0;
+			remoteInfo = "WatchMyNFT WatchKit App";
+		};
+		08E145CE279472620080B8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E145A2279472610080B8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E145CB279472620080B8D0;
+			remoteInfo = "WatchMyNFT WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08E145DF279472630080B8D0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08E145CD279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E145E3279472630080B8D0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				08E145BF279472620080B8D0 /* WatchMyNFT WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08E145AA279472610080B8D0 /* WatchMyNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMyNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E145AD279472610080B8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08E145AF279472610080B8D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08E145B1279472610080B8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08E145B4279472610080B8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08E145B6279472620080B8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E145B9279472620080B8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08E145BB279472620080B8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E145BE279472620080B8D0 /* WatchMyNFT WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchMyNFT WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E145C4279472620080B8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		08E145C6279472620080B8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E145CC279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMyNFT WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E145D1279472620080B8D0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		08E145D3279472620080B8D0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		08E145D5279472620080B8D0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		08E145D7279472630080B8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E145D9279472630080B8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E145E7279473970080B8D0 /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E145A7279472610080B8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145EE279478F10080B8D0 /* SwiftyJSON in Frameworks */,
+				08E145EB279478720080B8D0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E145C9279472620080B8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E145A1279472610080B8D0 = {
+			isa = PBXGroup;
+			children = (
+				08E145AC279472610080B8D0 /* WatchMyNFT */,
+				08E145C2279472620080B8D0 /* WatchMyNFT WatchKit App */,
+				08E145D0279472620080B8D0 /* WatchMyNFT WatchKit Extension */,
+				08E145AB279472610080B8D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08E145AB279472610080B8D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E145AA279472610080B8D0 /* WatchMyNFT.app */,
+				08E145BE279472620080B8D0 /* WatchMyNFT WatchKit App.app */,
+				08E145CC279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E145AC279472610080B8D0 /* WatchMyNFT */ = {
+			isa = PBXGroup;
+			children = (
+				08E145AD279472610080B8D0 /* AppDelegate.swift */,
+				08E145AF279472610080B8D0 /* SceneDelegate.swift */,
+				08E145B1279472610080B8D0 /* ViewController.swift */,
+				08E145B3279472610080B8D0 /* Main.storyboard */,
+				08E145B6279472620080B8D0 /* Assets.xcassets */,
+				08E145B8279472620080B8D0 /* LaunchScreen.storyboard */,
+				08E145BB279472620080B8D0 /* Info.plist */,
+				08E145E7279473970080B8D0 /* WatchConnectivityProvider.swift */,
+			);
+			path = WatchMyNFT;
+			sourceTree = "<group>";
+		};
+		08E145C2279472620080B8D0 /* WatchMyNFT WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				08E145C3279472620080B8D0 /* Interface.storyboard */,
+				08E145C6279472620080B8D0 /* Assets.xcassets */,
+			);
+			path = "WatchMyNFT WatchKit App";
+			sourceTree = "<group>";
+		};
+		08E145D0279472620080B8D0 /* WatchMyNFT WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08E145D1279472620080B8D0 /* InterfaceController.swift */,
+				08E145D3279472620080B8D0 /* ExtensionDelegate.swift */,
+				08E145D5279472620080B8D0 /* ComplicationController.swift */,
+				08E145D7279472630080B8D0 /* Assets.xcassets */,
+				08E145D9279472630080B8D0 /* Info.plist */,
+			);
+			path = "WatchMyNFT WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08E145A9279472610080B8D0 /* WatchMyNFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E145E4279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT" */;
+			buildPhases = (
+				08E145A6279472610080B8D0 /* Sources */,
+				08E145A7279472610080B8D0 /* Frameworks */,
+				08E145A8279472610080B8D0 /* Resources */,
+				08E145E3279472630080B8D0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E145C1279472620080B8D0 /* PBXTargetDependency */,
+			);
+			name = WatchMyNFT;
+			packageProductDependencies = (
+				08E145EA279478720080B8D0 /* Alamofire */,
+				08E145ED279478F10080B8D0 /* SwiftyJSON */,
+			);
+			productName = WatchMyNFT;
+			productReference = 08E145AA279472610080B8D0 /* WatchMyNFT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08E145BD279472620080B8D0 /* WatchMyNFT WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E145E0279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT WatchKit App" */;
+			buildPhases = (
+				08E145BC279472620080B8D0 /* Resources */,
+				08E145DF279472630080B8D0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E145CF279472620080B8D0 /* PBXTargetDependency */,
+			);
+			name = "WatchMyNFT WatchKit App";
+			productName = "WatchMyNFT WatchKit App";
+			productReference = 08E145BE279472620080B8D0 /* WatchMyNFT WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		08E145CB279472620080B8D0 /* WatchMyNFT WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E145DC279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT WatchKit Extension" */;
+			buildPhases = (
+				08E145C8279472620080B8D0 /* Sources */,
+				08E145C9279472620080B8D0 /* Frameworks */,
+				08E145CA279472620080B8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMyNFT WatchKit Extension";
+			productName = "WatchMyNFT WatchKit Extension";
+			productReference = 08E145CC279472620080B8D0 /* WatchMyNFT WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08E145A2279472610080B8D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					08E145A9279472610080B8D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					08E145BD279472620080B8D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					08E145CB279472620080B8D0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 08E145A5279472610080B8D0 /* Build configuration list for PBXProject "WatchMyNFT" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08E145A1279472610080B8D0;
+			packageReferences = (
+				08E145E9279478720080B8D0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				08E145EC279478F10080B8D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 08E145AB279472610080B8D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08E145A9279472610080B8D0 /* WatchMyNFT */,
+				08E145BD279472620080B8D0 /* WatchMyNFT WatchKit App */,
+				08E145CB279472620080B8D0 /* WatchMyNFT WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E145A8279472610080B8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145BA279472620080B8D0 /* LaunchScreen.storyboard in Resources */,
+				08E145B7279472620080B8D0 /* Assets.xcassets in Resources */,
+				08E145B5279472610080B8D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E145BC279472620080B8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145C7279472620080B8D0 /* Assets.xcassets in Resources */,
+				08E145C5279472620080B8D0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E145CA279472620080B8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145D8279472630080B8D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E145A6279472610080B8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145B2279472610080B8D0 /* ViewController.swift in Sources */,
+				08E145AE279472610080B8D0 /* AppDelegate.swift in Sources */,
+				08E145B0279472610080B8D0 /* SceneDelegate.swift in Sources */,
+				08E145E8279473970080B8D0 /* WatchConnectivityProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E145C8279472620080B8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E145D4279472620080B8D0 /* ExtensionDelegate.swift in Sources */,
+				08E145D2279472620080B8D0 /* InterfaceController.swift in Sources */,
+				08E145D6279472620080B8D0 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E145C1279472620080B8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E145BD279472620080B8D0 /* WatchMyNFT WatchKit App */;
+			targetProxy = 08E145C0279472620080B8D0 /* PBXContainerItemProxy */;
+		};
+		08E145CF279472620080B8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E145CB279472620080B8D0 /* WatchMyNFT WatchKit Extension */;
+			targetProxy = 08E145CE279472620080B8D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08E145B3279472610080B8D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E145B4279472610080B8D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08E145B8279472620080B8D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E145B9279472620080B8D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		08E145C3279472620080B8D0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E145C4279472620080B8D0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08E145DA279472630080B8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08E145DB279472630080B8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		08E145DD279472630080B8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMyNFT WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMyNFT WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		08E145DE279472630080B8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMyNFT WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMyNFT WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		08E145E1279472630080B8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchMyNFT_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMyNFT WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.a42.WatchMyNFT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		08E145E2279472630080B8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchMyNFT_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMyNFT WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.a42.WatchMyNFT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		08E145E5279472630080B8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchMyNFT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08E145E6279472630080B8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PYZGVXRSCJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchMyNFT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.a42.WatchMyNFT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08E145A5279472610080B8D0 /* Build configuration list for PBXProject "WatchMyNFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E145DA279472630080B8D0 /* Debug */,
+				08E145DB279472630080B8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E145DC279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E145DD279472630080B8D0 /* Debug */,
+				08E145DE279472630080B8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E145E0279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E145E1279472630080B8D0 /* Debug */,
+				08E145E2279472630080B8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E145E4279472630080B8D0 /* Build configuration list for PBXNativeTarget "WatchMyNFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E145E5279472630080B8D0 /* Debug */,
+				08E145E6279472630080B8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08E145E9279478720080B8D0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		08E145EC279478F10080B8D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08E145EA279478720080B8D0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E145E9279478720080B8D0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		08E145ED279478F10080B8D0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E145EC279478F10080B8D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 08E145A2279472610080B8D0 /* Project object */;
+}
